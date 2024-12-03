@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding: 10px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #D3D2DF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Price Finder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="movies.html">Movies</a>
+                <a class="nav-link" href="tvshows.html">TV Shows</a>
+                <a class="nav-link" href="videogames.html">Video Games</a>
+                <a class="nav-link active" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+                <a class="nav-link" href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>We want to help people find all the movies, TV shows, and games they want for the lowest price. Here's some extra information on the makers of the website!</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="download20241102143437.png" alt="Me" style="width:50%">
+      <div class="container">
+        <h2>Addie Cooley</h2>
+        <p class="title">Team Member</p>
+        <p>I am a first year student at Purdue currently studying UX Design. My favorite movies are Scott Pilgrim vs the World and When Harry Met Sally. My favorite games are Animal Crossing and Super Smash Bros.</p>
+        <p><button class="button">
+        <a href="mailto:cooley38@purdue.edu">Contact</a>
+        </button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Me" style="width:100%">
+      <div class="container">
+        <h2>Cassidy Nelson</h2>
+        <p class="title">Team Member</p>
+        <p>I am a sophmore at Purdue studying Game Design and Development. My favorite movies are Legally Blonde and The Dark Knight. My favorite video games are Hades and Ghost of Tsushima</p>
+        <p><button class="button">
+          <a href ="mailto:nelso640@purdue.edu">Contact</a>
+        </button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

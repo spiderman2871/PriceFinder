@@ -1,0 +1,30 @@
+
+body{ 
+	background: white;
+   	 font:80% Arial, Helvetica, Sans-Serif;
+	color:#8fa69f;
+	line-height:180%;
+    	margin:0;
+    	padding:0;
+	text-align:center;
+    }
+h1{
+    font-size:36pt;
+    font-weight:normal;
+    margin:0;
+    text-align: left;
+    padding-left:10px;
+    padding-top:30px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ }		
+ h2{
+    padding: 10px;
+    text-align: left;
+ }
+p{ 
+    margin:1em 0;
+}	
+
+                                                    

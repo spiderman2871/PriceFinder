@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 20px;
+    }
+    .table-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .movie-table {
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tv-table img {
+     width: 100%;
+  max-width: 250px; /* Set a consistent max-width */
+  height: 350px; /* Set a consistent height */
+  object-fit: cover; /* Ensures images fill the specified height and width without distortion */
+  border-bottom: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .pricing-table thead {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .pricing-table th, .pricing-table td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .pricing-table th {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .pricing-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .table-container {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+        <div class=""container-fluid">
+            <a class ="navbar-brand" href="#">Price Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </div>
+
+        <div class ="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="movies.html">Movies</a>
+                <a class="nav-link active" href="tvshows.html">TV Shows</a>
+                <a class="nav-link" href="videogames.html">Video Games</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+                <a class="nav-link" href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </nav>
+ 
+    <!--Drama-->
+<div class="table-container">
+    <!--Criminal Minds-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/I/51AeO+c5JtL._AC_UF894,1000_QL80_.jpg" alt="criminal minds">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paramount+</td>
+            <td>Criminal Minds</td>
+            <td class="price">$7.99(w/ads)</td>
+          </tr>
+          <tr>
+            <td>Hulu</td>
+            <td>Criminal Minds</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Amazon Prime</td>
+            <td>Criminal Minds</td>
+            <td class="price">$14.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  
+  
+   <!--Dexter-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BYmRjM2RhZGItYzdlMi00OWVkLWE0MTItZDBiZWU2NTU1Y2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="dexter">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th> Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paramount+</td>
+            <td>Dexter</td>
+            <td class="price">$7.99(w/ads)</td>
+          </tr>
+          <tr>
+            <td>Hulu</td>
+            <td>Dexter</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>Dexter</td>
+            <td class="price">$14.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--The Penguin-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BYmU3MzYzOWEtOTdkZi00YzA1LTliMzQtNDdiZDBjY2FiNmFlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="penguin">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Max</td>
+            <td>The Penguin</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Hulu</td>
+            <td>The Penguin</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Amazon Prime</td>
+            <td>The Penguin</td>
+            <td class="price">$14.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--911: Lone Star-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BN2YwZjg1NjUtODVmZS00YzUwLWE1OTctNThhZmFjY2NmYjlhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="lonestar">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>911: Lone Star</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Amazon Prime</td>
+            <td>911: Lone Star</td>
+            <td class="price">$2.99/episode</td>
+          </tr>
+          <tr>
+            <td>Disney+</td>
+            <td>911: Lone Star</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+</div>
+  
+  <!--Comedy-->
+  <div class="table-container">
+    <!--Abbott Elementary-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BYTNmMmM0MzQtYzg3Mi00NmIyLThmOGQtYmNlOTY0NDUwNzBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Abbot">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>Abbott Elementary</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Max</td>
+            <td>Abbott Elementary</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>Abbott Elementary</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  
+  
+   <!--New Girl-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MzM1NzMwMl5BMl5BanBnXkFtZTgwNjQ2MzI2NzE@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="new girl">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>New Girl</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>New Girl</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--The Office-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="the office">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Peacock</td>
+            <td>The Office</td>
+            <td class="price">$7.99(w/ads)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--How I Met Your Mother-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_QL75_UY281_CR10,0,190,281_.jpg" alt="HIMYM">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Netflix</td>
+            <td>How I Met Your Mother</td>
+            <td class="price">$6.99(w/ads)</td>
+          </tr>
+          <tr>
+            <td>Hulu</td>
+            <td>How I Met Your Mother</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>How I Met Your Mother</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+      
+   </div>
+  
+  
+  <!--Animation-->
+  <div class="table-container">
+    <!--The Simpson-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BNTU2OWE0YWYtMjRlMS00NTUwLWJmZWUtODFhNzJiMGJlMzI3XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Simpson">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>The Simpson</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>The Simpson</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  
+  
+   <!--Bob’s Burgers-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BZWQ1NGE4YjgtOGJjZS00OTZjLWI0MGUtMDUxYjY2M2E4MjNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Bob’s Burgers">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>Bob’s Burgers</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>Bob’s Burgers</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--Family Guy-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BNTZlMGQ1YjEtMzVlNC00ZmMxLTk0MzgtZjdkYTU1NmUxNTQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Family Guy">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>Family Guy</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Disney Plus</td>
+            <td>Family Guy</td>
+            <td class="price">$10.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>     
+  
+  
+  <!--South Park-->
+    <div class="tv-table">
+      <img src="https://m.media-amazon.com/images/M/MV5BNTBlMzA3ZTUtODZjNi00NTM0LWExMjMtNjJhYzA3YTkwMWYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="South Park">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Streaming Service</th>
+            <th>Show Title</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hulu</td>
+            <td>South Park</td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td>Max</td>
+            <td>South Park</td>
+            <td class="price">$9.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>       
+</div>
+
+</body>
+</html>

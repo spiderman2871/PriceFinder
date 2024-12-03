@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .table-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .game-table {
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .game-table img {
+     width: 100%;
+  max-width: 250px; /* Set a consistent max-width */
+  height: 350px; /* Set a consistent height */
+  object-fit: cover; /* Ensures images fill the specified height and width without distortion */
+  border-bottom: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .pricing-table thead {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .pricing-table th, .pricing-table td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .pricing-table th {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .pricing-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .table-container {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+        <div class=""container-fluid">
+            <a class ="navbar-brand" href="#">Price Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class ="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="movies.html">Movies</a>
+                <a class="nav-link" href="tvshows.html">TV Shows</a>
+                <a class="nav-link active" href="videogames.html">Video Games</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+                <a class="nav-link" href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </nav>
+    <div class="table-container">
+    <!-- Nintendo Switch -->
+     <!--Legend of Zelda -->
+        <div class="game-table">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/220px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="LOZ:BOTW">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Game</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>LOZ: BOTW</td>
+                <td class="price">$39.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>LOZ: BOTW</td>
+                <td class="price">$55.99</td>
+              </tr>
+              <tr>
+                <td>Nintnedo E-Shop</td>
+                <td>LOZ: BOTW</td>
+                <td class="price">$59.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- Mario Odyssey -->
+        <div class="game-table">
+          <img src="https://m.media-amazon.com/images/I/91SF0Tzmv4L._AC_UF894,1000_QL80_.jpg" alt="Mario Odyssey">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Streaming Service</th>
+                <th>Movie Title</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Game Stop</td>
+                <td>Mario Odyssey</td>
+                <td class="price">$34.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Mario Odyssey</td>
+                <td class="price">$54.25</td>
+              </tr>
+              <tr>
+                <td>Nintendo E-Shop</td>
+                <td>Mario Odyssey</td>
+                <td class="price">$59.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- Princess Peach Showtime -->
+        <div class="game-table">
+          <img src="https://m.media-amazon.com/images/I/810iANmKbOL._AC_UF894,1000_QL80_.jpg" alt="Princess Peach">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Movie Title</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Princess Peach</td>
+                <td class="price">$54.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Princess Peach</td>
+                <td class="price">$59.83</td>
+              </tr>
+              <tr>
+                <td>Nintendo E-Shop</td>
+                <td>Princess Peach</td>
+                <td class="price">$59.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- Hades -->
+        <div class="game-table">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Hades_cover_art.jpg/220px-Hades_cover_art.jpg" alt="Hades">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Streaming Service</th>
+                <th>Movie Title</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Hades</td>
+                <td class="price">$37.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Hades</td>
+                <td class="price">$59.99</td>
+              </tr>
+              <tr>
+                <td>Nintendo E-Shop</td>
+                <td>Hades</td>
+                <td class="price">$24.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="table-container">
+      <!--PS-->
+        <!--Marvel's Spiderman-->
+        <div class ="game-table">
+            <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/0714/vuF88yWPSnDfmFJVTyNJpVwW.png" alt="Spiderman">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Game</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Spiderman</td>
+                <td class="price">$12.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Spiderman</td>
+                <td class="price">$43.86</td>
+              </tr>
+              <tr>
+                <td>Play Station Store</td>
+                <td>Spiderman</td>
+                <td class="price">$39.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!--Ghost of Tsushima-->
+        <div class ="game-table">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Ghost_of_Tsushima.jpg/220px-Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Game</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Ghost of Tsushima</td>
+                <td class="price">$34.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Ghost of Tsushima</td>
+                <td class="price">$31.98</td>
+              </tr>
+              <tr>
+                <td>Play Station Store</td>
+                <td>Ghost of Tsushima</td>
+                <td class="price">$59.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!--Persona 5 Royal-->
+        <div class ="game-table">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202209/0202/ksms0QDJcLMm1cGE01cLVccq.png" alt="Persona 5">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Game</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Persona 5 Royal</td>
+                <td class="price">$18.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Persona 5 Royal</td>
+                <td class="price">$25.23</td>
+              </tr>
+              <tr>
+                <td>Play Station Store</td>
+                <td>Persona 5 Royal</td>
+                <td class="price">$59.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!--Fallout 4-->
+        <div class ="game-table">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Fallout_4_cover_art.jpg" alt="Fallout 4">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Store</th>
+                <th>Game</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GameStop</td>
+                <td>Fallout 4</td>
+                <td class="price">$14.99</td>
+              </tr>
+              <tr>
+                <td>Amazon</td>
+                <td>Fallout 4</td>
+                <td class="price">$27.27</td>
+              </tr>
+              <tr>
+                <td>Play Station Store</td>
+                <td>Fallout 4</td>
+                <td class="price">$19.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    
+        <div class="table-container">
+        <!--Xbox-->
+            <!--Forza Horizon 4-->
+            <div class="game-table">
+                <img src="https://store-images.s-microsoft.com/image/apps.36093.14343301090572358.2000000000007864116.1feb0fed-abe9-4849-b638-8d7eca69cff4" alt="Horizon 4">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th>Store</th>
+                      <th>Game</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GameStop</td>
+                      <td>Forza Horizon 4</td>
+                      <td class="price">$29.99</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon</td>
+                      <td>Forza Horizon 4</td>
+                      <td class="price">$50</td>
+                    </tr>
+                    <tr>
+                      <td>Xbox Store</td>
+                      <td>Forza Horizon 4</td>
+                      <td class="price">$59.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            <!--Minecraft-->
+            <div class="game-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEnFbk9_ZYC69qFjT5iIz5AzTu8OeMNJJaw&s" alt="">Minecraft
+                <table class="pricing-table">
+                <thead>
+                    <tr>
+                      <th>Store</th>
+                      <th>Game</th>
+                      <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>GameStop</td>
+                      <td>Minecraft</td>
+                      <td class="price">$19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon</td>
+                      <td>Minecraft</td>
+                      <td class="price">$24.97</td>
+                    </tr>
+                    <tr>
+                      <td>Xbox Store</td>
+                      <td>Minecraft</td>
+                      <td class="price">$19.99</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!--Madden NFL 25-->
+            <div class="game-table">
+                <img src="https://i5.walmartimages.com/asr/42ab6010-e38a-4ac0-8271-0f062fce11a3.79363d1a5964c70be4512fc01a8cd989.jpeg" alt="Madden 25">
+                <table class="pricing-table">
+                <thead>
+                    <tr>
+                      <th>Store</th>
+                      <th>Game</th>
+                      <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>GameStop</td>
+                      <td>Madden NFL 25</td>
+                      <td class="price">$54.99</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon</td>
+                      <td>Madden NFL 25</td>
+                      <td class="price">$34.97</td>
+                    </tr>
+                    <tr>
+                      <td>Xbox Store</td>
+                      <td>Madden NFL 25</td>
+                      <td class="price">$69.99</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!--Dead by Daylight-->
+            <div class="game-table">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTUyNTk1MzYtMDdlMC00YzQwLTk2OTUtNDAwNjUyZjkyZmViXkEyXkFqcGc@._V1_.jpg" alt="Dead by Daylight">
+                <table class="pricing-table">
+                <thead>
+                    <tr>
+                      <th>Store</th>
+                      <th>Game</th>
+                      <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>GameStop</td>
+                      <td>Dead by Daylight</td>
+                      <td class="price">$19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon</td>
+                      <td>Dead by Daylight</td>
+                      <td class="price">$44.99</td>
+                    </tr>
+                    <tr>
+                      <td>Xbox Store</td>
+                      <td>Dead by Daylight</td>
+                      <td class="price">$29.99</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+</body>
+</html>
